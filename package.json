@@ -1,0 +1,23 @@
+{
+  "name": "react-parcel-issues",
+  "version": "1.0.0",
+  "author": "Sergey Tovt <st@norse.co>",
+  "license": "MIT",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development parcel ./public/index.html -p 3000 --open",
+    "build": "cross-env NODE_ENV=production parcel build ./public/index.html --detailed-report --public-url ./"
+  },
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1",
+    "shared": "^0.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "cross-env": "^5.2.0",
+    "parcel-bundler": "^1.12.3"
+  }
+}
