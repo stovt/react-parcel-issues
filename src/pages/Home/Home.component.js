@@ -22,23 +22,23 @@ const Home = () => {
   }, [setCounter2]);
 
   return (
-  <div>
-    <p>Home page</p>
-    <Link to="/about">About page</Link>
-    <hr />
     <div>
-      <div>Counter 1: <b>{counter1}</b></div>
-      <button type="button" onClick={incrementCounter1}>Increment</button>
-      <button type="button" onClick={decrementCounter1}>Decrement</button>
+      <p>Home page</p>
+      <Link to="/about">About page</Link>
+      <hr />
+      <div>
+        <div>Counter 1: <b>{counter1}</b></div>
+        <button type="button" onClick={incrementCounter1}>Increment</button>
+        <button type="button" onClick={decrementCounter1}>Decrement</button>
+      </div>
+      <hr />
+      <div>
+        <div>Counter 2: <b>{counter2}</b></div>
+        <button type="button" onClick={incrementCounter2}>Increment</button>
+        <button type="button" onClick={decrementCounter2}>Decrement</button>
+      </div>
     </div>
-    <hr />
-    <div>
-      <div>Counter 2: <b>{counter2}</b></div>
-      <button type="button" onClick={incrementCounter2}>Increment</button>
-      <button type="button" onClick={decrementCounter2}>Decrement</button>
-    </div>
-  </div>
-)
+  )
 };
 
 export default Home;
