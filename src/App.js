@@ -1,19 +1,6 @@
-import React, { Suspense, lazy } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import React from 'react';
+import HomePage from './pages/Home';
 
-
-const Home = React.lazy(() => import('./pages/Home'));
-const About = React.lazy(() => import('./pages/About'));
-
-const App = () => (
-  <Router basename="/react-parcel-issues">
-    <Suspense fallback={<div>Loading...</div>}>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-      </Switch>
-    </Suspense>
-  </Router>
-);
+const App = () => <HomePage />;
 
 export default App;

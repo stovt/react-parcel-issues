@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { useCounterContext1 } from '../../providers/Counter1';
 import { useCounterContext2 } from '../../providers/Counter2';
 
@@ -24,7 +23,6 @@ const Home = () => {
   return (
     <div>
       <p>Home page</p>
-      <Link to="/about">About page</Link>
       <hr />
       <div>
         <div>Counter 1: <b>{counter1}</b></div>
