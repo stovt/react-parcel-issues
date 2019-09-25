@@ -1,6 +1,6 @@
 # Parsel and React Context issue
 
-Demo: [https://stovt.github.io/eact-parcel-issues/](https://stovt.github.io/eact-parcel-issues/)
+Demo: [https://stovt.github.io/react-parcel-issues/](https://stovt.github.io/react-parcel-issues/)
 
 This app demonstrates a bug with `parcel bundler` and `React Context`.
 
